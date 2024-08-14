@@ -1,0 +1,21 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.yourname.maiz
+productName: Maiz
+files:
+  - filter:
+      - build/**/*
+      - main.js
+      - preload.js
+mac:
+  category: public.app-category.utilities
+win:
+  target: nsis
+  icon: src/assets/umf3.ico
+linux:
+  target: AppImage
+  maintainer: Your Name
+  vendor: Your Company
+  icon: src/assets/umf3.ico
+electronVersion: 31.3.1
